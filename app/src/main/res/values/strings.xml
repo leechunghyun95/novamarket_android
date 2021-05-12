@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NovaMarket</string>
+    <string name="underlined_text"><u>보기</u></string>
+
+
+    <string name="app_arg">서비스 이용 약관...</string>
+    <string name="app_arg2">개인정보 취급방침...</string>
+    <string name="app_arg3">위치 정보 이용 약관...</string>
+
+</resources>
