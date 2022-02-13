@@ -12,7 +12,6 @@ import android.widget.Button;
 
 public class StartActivity extends AppCompatActivity {
     String TAG = "StartActivity";
-    Button startBtn;
     Boolean islogined;
 
     @Override
@@ -24,11 +23,7 @@ public class StartActivity extends AppCompatActivity {
         islogined = pref.getBoolean("islogined",false);
         Log.d(TAG,"islogined: " + islogined);
 
-
-        if(islogined){//로그인 했으면 자동로그인
-            startActivityC(MainActivity.class);
-        }
-        
+        Button startBtn;
         startBtn = findViewById(R.id.startBtn);
         //노바마켓 시작하기 버튼 클릭하면
         startBtn.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +33,26 @@ public class StartActivity extends AppCompatActivity {
                 startActivityC(AuthenticationActivity.class);
             }
         });
+
+
+//        if(islogined){//로그인 했으면 자동로그인
+//            Log.d(TAG,"로그인 했으면 자동로그인");
+//            startActivityC(MainActivity.class);
+//            finish();
+//        }else {
+//            Log.d(TAG,"startBtn = findViewById(R.id.startBtn)");
+//            Button startBtn;
+//            startBtn = findViewById(R.id.startBtn);
+//            //노바마켓 시작하기 버튼 클릭하면
+//            startBtn.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    //전화번호 인증 액티비티로 이동
+//                    startActivityC(AuthenticationActivity.class);
+//                }
+//            });
+//        }
+
     }
 
     // 액티비티 전환 함수

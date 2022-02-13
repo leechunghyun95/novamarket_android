@@ -60,7 +60,7 @@ public class AuthenticationWithEmailActivity extends AppCompatActivity {
                 
                 //이메일 회원 DB에 있는지 검사
                 // get방식 파라미터 추가
-                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://13.124.24.112/email_check.php").newBuilder();
+                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://3.37.128.131/email_check.php").newBuilder();
                         urlBuilder.addQueryParameter("v", "1.0"); // 예시
                         String url = urlBuilder.build().toString();
 
@@ -107,7 +107,7 @@ public class AuthenticationWithEmailActivity extends AppCompatActivity {
                                 code = numberGen(6,1);
 
                                 // get방식 파라미터 추가
-                                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://13.124.24.112/mail.php").newBuilder();
+                                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://3.37.128.131/mail.php").newBuilder();
                                         urlBuilder.addQueryParameter("v", "1.0"); // 예시
                                         String url = urlBuilder.build().toString();
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectSelectActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_subject_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sub"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <RadioButton
+            android:id="@+id/sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="같이해요"
+            />
+        <RadioButton
+            android:id="@+id/sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동네맛집"
+            />
+        <RadioButton
+            android:id="@+id/sub3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일상"
+            />
+        <RadioButton
+            android:id="@+id/sub4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="팀노바소식"
+            />
+        <RadioButton
+            android:id="@+id/sub5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취미생활"
+            />
+
+        <RadioButton
+            android:id="@+id/sub6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="건강"
+            />
+
+        <RadioButton
+            android:id="@+id/sub7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="코딩"
+            />
+
+        <RadioButton
+            android:id="@+id/sub8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타"
+            />
+
+
+
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ok_btn_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="선택 완료"/>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteCommunityPostActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_WriteCommunity"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <Button
+            android:id="@+id/done_WriteCommunity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/select_category_btn_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/title_write_market_post"
+        android:weightSum="4"
+        android:clickable="true"
+        android:gravity="bottom">
+    <TextView
+        android:id="@+id/selected_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시글의 주제를 선택해주세요."
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="3"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox_groupChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹채팅방 만들기"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_write_community_post_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_write_community_post_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/contents_write_community_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="팀노바생활 관련된 질문이나 이야기를 해보세요."
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="17.6sp"
+            android:inputType="textMultiLine"
+            android:background="@null"/>
+
+    </LinearLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/uploadPhoto_community"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/image"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/countphoto_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="0/10"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/uploadLocation_community"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/placeholder"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/countLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="0/10"/>
+    </LinearLayout>
+
+
+</LinearLayout>

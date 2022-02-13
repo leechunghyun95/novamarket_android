@@ -1,5 +1,6 @@
 package novamarket.com;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -57,7 +58,7 @@ import java.util.List;
 public class SignUpActivity extends AppCompatActivity {
     String TAG = "SignUpActivity";
     private static final int REQUEST_CODE = 0;
-    ImageView setting_profile_image;
+    CircleImageView setting_profile_image;
     ImageView cameraIcon;
     EditText input_nickname;
     EditText input_email;
@@ -100,7 +101,7 @@ public class SignUpActivity extends AppCompatActivity {
                 //닉네임값 입력널값 검사
                 if(input_nickname.getText().toString().length() > 0){//입력했을때
                     // get방식 파라미터 추가
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://13.124.24.112/nickname_check.php").newBuilder();
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://3.37.128.131/nickname_check.php").newBuilder();
                     urlBuilder.addQueryParameter("v", "1.0"); // 예시
                     String url = urlBuilder.build().toString();
 
@@ -320,7 +321,7 @@ public class SignUpActivity extends AppCompatActivity {
                         if(canNickname){//닉네임 사용 가능할때
                             //회원가입 , 서버에 프로필 이미지 업로드
                             // get방식 파라미터 추가
-                            HttpUrl.Builder urlBuilder = HttpUrl.parse("http://13.124.24.112/sign_up.php").newBuilder();
+                            HttpUrl.Builder urlBuilder = HttpUrl.parse("http://3.37.128.131/sign_up.php").newBuilder();
                                     urlBuilder.addQueryParameter("v", "1.0"); // 예시
                                     String url = urlBuilder.build().toString();
 

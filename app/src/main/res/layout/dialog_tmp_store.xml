@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EAF4FF"
+    >
+
+    <TextView
+        android:id="@+id/dialog_default_txtview"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="작성중인 글이 있어요. \n이어서 작성하시겠어요?"
+        android:layout_marginBottom="10dp"></TextView>
+
+        <Button
+            android:id="@+id/default_dialog_ok_btn"
+            android:text="네, 이어서 작성할래요."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/default_dialog_cancel_btn"
+            android:text="아니요, 새로 작성할래요."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+        </Button>
+</LinearLayout>

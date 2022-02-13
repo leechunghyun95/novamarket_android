@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_menu_select"
+        android:title="앨범에서 선택" />
+    <item
+        android:id="@+id/context_menu_gobasic"
+        android:title="프로필사진 삭제" />
+
+</menu>

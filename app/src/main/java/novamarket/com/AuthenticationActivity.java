@@ -139,7 +139,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                             if(status == NetworkStatus.TYPE_MOBILE || status == NetworkStatus.TYPE_WIFI) {
                                 Log.d(TAG,"인터넷 연결 체크: 연결됨");
                                 // get방식 파라미터 추가
-                                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://13.124.24.112/user_check.php").newBuilder();
+                                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://3.37.128.131/user_check.php").newBuilder();
                                         urlBuilder.addQueryParameter("v", "1.0"); // 예시
                                         String url = urlBuilder.build().toString();
 
@@ -193,7 +193,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                         try {
-//                                        Toast.makeText(context, "응답" + responseData, Toast.LENGTH_SHORT).show();
+
                                         } catch (Exception e) {
                                         e.printStackTrace();
                                         }

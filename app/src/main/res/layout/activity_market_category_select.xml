@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketCategorySelectActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_market_category_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="홈 화면에서 보고 싶은 카테고리를 \n체크 하세요."/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        >
+        <RadioButton
+            android:id="@+id/cat0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체"
+            />
+
+        <RadioButton
+            android:id="@+id/cat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="디지털/가전"
+            />
+        <RadioButton
+            android:id="@+id/cat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가구/인테리어"
+            />
+        <RadioButton
+            android:id="@+id/cat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유아동/유아도서"
+            />
+        <RadioButton
+            android:id="@+id/cat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생활/가공식품"
+            />
+        <RadioButton
+            android:id="@+id/cat5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스포츠/레저"
+            />
+
+        <RadioButton
+            android:id="@+id/cat6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성잡화"
+            />
+
+        <RadioButton
+            android:id="@+id/cat7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성의류"
+            />
+
+        <RadioButton
+            android:id="@+id/cat8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남셩패션/잡화"
+            />
+
+        <RadioButton
+            android:id="@+id/cat9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게임/취미"
+            />
+
+        <RadioButton
+            android:id="@+id/cat10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뷰티/미용"
+            />
+        <RadioButton
+            android:id="@+id/cat11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="반려동물용품"
+            />
+        <RadioButton
+            android:id="@+id/cat12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도서/티켓/음반"
+            />
+        <RadioButton
+            android:id="@+id/cat13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식물"
+            />
+        <RadioButton
+            android:id="@+id/cat14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타 중고물품"
+            />
+        <RadioButton
+            android:id="@+id/cat15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삽니다"
+            />
+
+
+    </RadioGroup>
+
+
+
+
+
+</LinearLayout>

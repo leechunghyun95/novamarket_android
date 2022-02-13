@@ -6,8 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -22,7 +24,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".WithdrawalActivity"></activity>
+        <activity android:name=".ShowLocationActivity">
+        </activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".BuyListActivity" />
+        <activity android:name=".SelectBuyerActivity2" />
+        <activity android:name=".SelectBuyerActivity" />
+        <activity android:name=".LikeListActivity" />
+        <activity android:name=".SellListActivity" />
+        <activity android:name=".ChatMarketActivity" />
+
+        <service android:name=".Service.ChatService" /> <!-- <activity android:name=".ChatActivity" /> -->
+        <activity android:name=".NovaSearchActivity" />
+        <activity android:name=".MarketCategorySelectActivity" />
+        <activity android:name=".MarketSearchActivity" />
+        <activity android:name=".InterestCategorySettingActivity" />
+        <activity android:name=".UpdateNovaActivity" />
+        <activity android:name=".UpdateMarketActivity" />
+        <activity android:name=".NovaActivity" />
+        <activity android:name=".MarketActivity" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="f928871dc3185ee5eef683690fcfcdbd" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="enct77kgyd" />
+
+        <activity android:name=".SearchLocationActivity" />
+        <activity android:name=".SubjectSelectActivity" />
+        <activity android:name=".WriteCommunityPostActivity" />
+        <activity android:name=".CategorySelectActivity" />
+        <activity android:name=".WriteMarketPostActivity" />
+        <activity android:name=".ModifyProfileActivity" />
+        <activity android:name=".WithdrawalActivity" />
         <activity android:name=".TelephoneChangeActivity" />
         <activity android:name=".AuthenticationWithEmailActivity" />
         <activity android:name=".SignUpActivity" />
@@ -33,6 +68,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".AuthenticationActivity" />
         <activity android:name=".MainActivity" />

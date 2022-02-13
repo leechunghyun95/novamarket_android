@@ -29,6 +29,7 @@
         android:layout_marginLeft="15dp"/>
 
     <TextView
+        android:id="@+id/nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="닉네임"
@@ -38,6 +39,17 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="25dp"/>
 
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/nickname"
+        app:layout_constraintLeft_toRightOf="@+id/profile_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
     <Button
         android:id="@+id/profile_show_btn"
         android:layout_width="match_parent"
@@ -46,7 +58,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:text="프로필 보기"/>
+        android:text="프로필 수정"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -60,6 +72,7 @@
         android:weightSum="3">
 
         <LinearLayout
+            android:id="@+id/linearLayout_sellList"
             android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,39 +80,22 @@
             android:layout_weight="1"
             android:focusable="true">
             <ImageView
-                android:src="@drawable/buy"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:src="@drawable/money"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
                 android:layout_gravity="center"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="구매내역"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:clickable="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:focusable="true">
-            <ImageView
-                android:src="@drawable/sell"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:text="판매내역"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout_buyList"
             android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,15 +103,42 @@
             android:layout_weight="1"
             android:focusable="true">
             <ImageView
-                android:src="@drawable/heart"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:src="@drawable/sale"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
                 android:layout_gravity="center"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="구매내역"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_likeList"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:focusable="true">
+            <ImageView
+                android:src="@drawable/heart_blank"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:text="관심목록"/>
         </LinearLayout>
 

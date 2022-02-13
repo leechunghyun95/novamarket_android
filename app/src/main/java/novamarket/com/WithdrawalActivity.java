@@ -61,7 +61,7 @@ public class WithdrawalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d(TAG,"네, 삭제할게요 버튼 클릭");
                 // get방식 파라미터 추가
-                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://13.124.24.112/withdrawal.php").newBuilder();
+                HttpUrl.Builder urlBuilder = HttpUrl.parse("http://3.37.128.131/withdrawal.php").newBuilder();
                         urlBuilder.addQueryParameter("v", "1.0"); // 예시
                         String url = urlBuilder.build().toString();
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/myPost_nova"
+        android:visible="true">
+        <item
+            android:id="@+id/menu_mod_nova"
+            android:title="수정하기"
+            />
+        <item
+            android:id="@+id/menu_delete_nova"
+            android:title="삭제하기"
+            />
+    </group>
+    <group
+        android:id="@+id/post_nova">
+        <item
+            android:id="@+id/menu_report_nova"
+            android:title="신고하기"
+            />
+    </group>
+</menu>
